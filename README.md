@@ -6,10 +6,12 @@ a gulp plugin to convert ractive single file component to js file
 
 ```js
 var gulp = require('gulp')
-var trac = require('trac')
+var trac = require('gulp-trac')
+var rename = require('gulp-rename')
 
 gulp.task('default', function () {
   return gulp.src('example/components/*.html')
+    .pipe(rename(function(filename) {filename.extname = '.js'}))
     .pipe(trac({moduleFormat: 'amd'}))
     .pipe(gulp.dest('dist'))
 })

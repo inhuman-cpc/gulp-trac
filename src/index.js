@@ -27,7 +27,7 @@ function compile(options) {
     try {
       var html = file.contents.toString()
       var component = rcu.parse(html)
-      var result = rcuBuilders[options.moduleFormat].call(rcuBuilders, component)
+      var result = rcuBuilders[options.moduleFormat || 'amd'].call(rcuBuilders, component)
       if (typeof options.onCompile === 'function') {
         result = options.onCompile.call(null, {
           content: result
