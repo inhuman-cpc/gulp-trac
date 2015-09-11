@@ -1,0 +1,13 @@
+{
+  "name": "gulp-trac",
+  "version": "0.0.1",
+  "description": "a gulp plugin to convert ractive single file component to js file",
+  "main": "src/index.js",
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "ractive": "^0.7.3",
+    "rcu": "^0.4.2",
+    "rcu-builders": "^0.2.0",
+    "through2": "^2.0.0"
+  }
+}
