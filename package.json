@@ -2,6 +2,23 @@
   "name": "gulp-trac",
   "version": "0.0.1",
   "description": "a gulp plugin to convert ractive single file component to js file",
+  "keywords": [
+    "ractive",
+    "component",
+    "rcu",
+    "rvc"
+  ],
+  "homepage": "https://github.com/simongfxu/gulp-trac",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simongfxu/gulp-trac"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "simonxu",
+    "email": "xugaofan@gmail.com",
+    "url": "https://github.com/simongfxu"
+  },
   "main": "src/index.js",
   "dependencies": {
     "gulp-util": "^3.0.6",
